@@ -28,3 +28,28 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_bubble_n_more_than_ten():
+    result = []
+    input_arr = [32, 35, 46, 78, 64, 34, 25, 12, 22, 11, 90]
+
+    result = Lab3.bubble_sort(input_arr, 3)
+
+    assert (result == 1)
+
+def test_bubble_n_equal_zero():
+    result = []
+    input_arr = []
+
+    result = Lab3.bubble_sort(input_arr, 3)
+
+    assert (result == 0)
+
+def test_bubble_s_is_not_int():
+    result = []
+    input_arr = ["dog", 35, 46, 78, 64, 34, 25, 12, 22, 11, 90]
+
+    result = Lab3.bubble_sort(input_arr, 3)
+
+    assert (result == 2)
+
